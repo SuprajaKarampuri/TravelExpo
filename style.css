@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url('luca-bravo-O453M2Liufs-unsplash.jpg');
+    background-size: cover;
+    font-family: sans-serif;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color:white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.logo{
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    color:indianred;
+}
+
+.logo :hover{
+    color:indianred;
+}
+.menu a{
+    text-decoration: none;
+    color:rgb(188, 212, 230);
+    padding: 10px 20px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom:2px solid indianred ;
+    transition: 0.4s linear;
+    
+}
+
+.menu a:hover:before{
+    width: 90%;
+    color: white;
+}
+
+.menu_reg a{
+    text-decoration: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    background:rgb(188, 212, 230);
+    border-radius: 8px;
+    transition: 0.4s;
+}
+
+.menu_reg a:hover{
+    background: rgb(173, 100, 100);
+    border: 1px solid rgb(217, 39, 39);
+    letter-spacing: .3rem;
+}
+
+.header-txt{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header-txt span{
+    letter-spacing: 1px;
+   
+}
+
+.header-txt h1{
+    font-size:3.5em ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header-txt a{
+    text-decoration: none;
+    background: indianred;
+    color: white;
+    padding: 10px 20px;
+    letter-spacing: rgb(219, 86, 108);
+    transition: 0.4s;
+}
+.header-txt a:hover{
+    background: transparent;
+    border: 1px solid rgb(217, 39, 39);
+   letter-spacing: .3rem;
+}
